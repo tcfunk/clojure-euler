@@ -12,8 +12,8 @@
       (= 0 (mod n 5))))
 
 (reduce + (reduce (fn [nums n]
-          (if (is-divisible n)
-            (conj nums n)
-            nums))
-        []
-        (take 1000 (iterate inc 0))))
+                    (if (is-divisible n)
+                      (conj nums n)
+                      nums))
+                  []
+                  (take 1000 (iterate inc 0))))
